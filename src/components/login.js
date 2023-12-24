@@ -55,6 +55,7 @@ const LoginForm = () => {
     <div className="login-container">
       <Container component="main" maxWidth="xs">
         <Paper elevation={3} className="login-paper">
+          <p className='styleText2'>Welcome to Shopping Mania</p>
           <p className='styleText'> Login Page </p>
           <form onSubmit={handleSubmit}>
             <TextField
