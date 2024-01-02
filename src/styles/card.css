@@ -1,5 +1,6 @@
 .card{
     border: .5px solid black;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +15,8 @@
 .coverimage > img{
     height: 150px;
     width: 200px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .other{
     display: flex;
@@ -25,7 +28,7 @@
     color: rgb(255, 213, 0);
 }
 .add-cart{
-    background-color: green;
+    background-color: #007bff;
     color: white;
     padding: 10px 30px;
     border: none;

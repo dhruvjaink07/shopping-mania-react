@@ -3,6 +3,7 @@
     padding: 0;
 }
 .container{
+    width: inherit;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;

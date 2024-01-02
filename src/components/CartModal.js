@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../CartModal.css';  // Ensure you have a separate CSS file for CartModal styles
+import '../styles/CartModal.css';  // Ensure you have a separate CSS file for CartModal styles
 
 const CartModal = ({ open, onClose, cart }) => {
     return (
@@ -8,14 +8,16 @@ const CartModal = ({ open, onClose, cart }) => {
         <div className="cart-content" onClick={(e) => e.stopPropagation()}>
           <h2>Your Cart</h2>
           <ul>
+          <div className='disp-prod'>
             {cart.map((product) => (
               <li key={product.id}>
                 <p>{product.title}</p>
                 <p>{product.price}</p>
               </li>
             ))}
+            </div>
           </ul>
-          <button onClick={onClose}>Close Cart</button>
+          <button className='redBtn' onClick={onClose}>Close Cart</button>
         </div>
       </div>
     );

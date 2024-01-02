@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import { Navigate } from "react-router-dom";
 import PropTypes from 'prop-types';
-import '../Products.css';
+import '../styles/Products.css';
 import Navbar from './Navbar';
 import ProCard from "./ProCard";
 import CartModal from "./CartModal";
@@ -89,7 +88,7 @@ const Products = () => {
 
         )}
       </div>
-      <CartModal open={cartModalOpen} onClose={handleCloseCart} cart={cart} />
+      <CartModal open={cartModalOpen} onClose={handleCloseCart} cart={cart} product={products} />
       <FilterModal open={filterModalOpen} onClose={handleCloseFilterModal} onFilter={handleFilter} />
     </div>
   );

@@ -27,7 +27,23 @@ li{
 .cart-modal.open .cart-content {
   display: block; /* Show the content when the modal is open */
 }
-
-@media screen and (max-width: 510px) {
-  
+.redBtn{
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.redBtn:hover{
+  background-color: #b30c00;
+}
+.disp-prod{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 10px;
+}
+.disp-prod p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

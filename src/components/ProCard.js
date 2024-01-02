@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../card.css';
+import '../styles/card.css';
 
 const ProCard = ({ product, onAddToCart }) => {
   const { thumbnail, title, price, rating } = product;

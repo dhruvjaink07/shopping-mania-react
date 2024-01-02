@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../navbar.css';
+import '../styles/navbar.css';
 import FilterModal from './FilterModal';
 import CartModal from './CartModal';
 
-const Navbar = ({ onFilter,onOpenCart,cart, onSearch }) => {
+const Navbar = ({ onFilter, onOpenCart, cart, onSearch }) => {
   const [filterModalOpen, setFilterModalOpen] = useState(false);
   const [cartModalOpen, setCartModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,7 +18,6 @@ const Navbar = ({ onFilter,onOpenCart,cart, onSearch }) => {
 
   const handleOpenCartModal = () => {
     setCartModalOpen(true);
-    
   };
 
   const handleCloseCartModal = () => {
@@ -30,14 +29,19 @@ const Navbar = ({ onFilter,onOpenCart,cart, onSearch }) => {
     setSearchQuery(query);
     onSearch(query);
   };
+
   return (
     <div className='navbar'>
       <nav>
         <ul>
           <li className='start'>Shopping Mania</li>
-          <input type="text" id="searchInput" className="searchBox" placeholder='Search Products' 
-          value={searchQuery}
-          onChange={handleSearchChange}
+          <input
+            type="text"
+            id="searchInput"
+            className="searchBox"
+            placeholder='Search Products'
+            value={searchQuery}
+            onChange={handleSearchChange}
           />
           <div className="btngrp">
             <li>
